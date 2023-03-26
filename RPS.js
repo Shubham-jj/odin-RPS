@@ -16,36 +16,28 @@ function getComputerChoice() {
 
 function playRound(computer, player) {
   let result;
-  let scPlayer = 0;
-  let scComp = 0;
 
   if (computer == player) {
     result = `It's a tie because ${computer} and ${player} are same!`;
     return result;
   } else if (computer == "Rock" && player == "Paper") {
-    scPlayer += 1;
-    result = `Player wins because ${player} beats ${computer}!,Player = ${scPlayer}`;
+    result = `Player wins because ${player} beats ${computer}!`;
     return result;
   } else if (computer == "Rock" && player == "Scissors") {
-    scComp += 1;
-    result = `Computer wins because ${computer} beats ${player}!,Computer = ${scComp}`;
+    result = `Computer wins because ${computer} beats ${player}!`;
     return result;
   } else if (computer == "Paper" && player == "Rock") {
-    scComp += 1;
-    result = `Computer wins because ${computer} beats ${player}!,Computer = ${scComp}`;
+    result = `Computer wins because ${computer} beats ${player}!`;
 
     return result;
   } else if (computer == "Paper" && player == "Scissors") {
-    scPlayer += 1;
-    result = `Player wins because ${player} beats ${computer}!,Player = ${scPlayer}`;
+    result = `Player wins because ${player} beats ${computer}!`;
     return result;
   } else if (computer == "Scissors" && player == "Rock") {
-    scPlayer += 1;
-    result = `Player wins because ${player} beats ${computer}!,Player = ${scPlayer}`;
+    result = `Player wins because ${player} beats ${computer}!`;
     return result;
   } else if (computer == "Scissors" && player == "Paper") {
-    scComp += 1;
-    result = `Computer wins beacuse ${computer} beats ${player}!,Computer = ${scComp}`;
+    result = `Computer wins beacuse ${computer} beats ${player}!`;
     return result;
   }
 }

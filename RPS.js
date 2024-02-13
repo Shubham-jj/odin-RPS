@@ -13,8 +13,10 @@ function getCoputerChoice() {
 
 let playerChoice;
 function getPlayerChoice() {
-  playerChoice = prompt("Enter your choice: ");
-  playerChoice = playerChoice.toLowerCase();
+  const r = document.querySelector("#rock");
+  const p = document.querySelector("#paper");
+  const s = document.querySelector("#scissors");
+  playerChoice = r.value.toLowerCase();
   return playerChoice;
 }
 
@@ -55,13 +57,7 @@ function playRound(playerChoice, computerChoice) {
     return player;
   }
 }
-for (let i = 1; i <= 5; i++) {
-  console.log(
-    `Result No(${i}) : => ${playRound(getPlayerChoice(), getCoputerChoice())}`
-  );
-  console.log("Player Score=>", playerScore);
-  console.log("Computer Score=>", computerScore);
-}
+
 if (playerScore === computerScore) {
   console.log("Tied!");
 } else if (playerScore > computerScore) {

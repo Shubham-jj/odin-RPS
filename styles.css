@@ -1,0 +1,52 @@
+body {
+ box-sizing: border-box;
+ background-color: burlywood;
+}
+
+.mainCont {
+ max-width: 1500px;
+ border-radius: 120px;
+ margin: 20px 20px;
+ padding: 20px;
+}
+
+
+.heading {
+ border: 3px solid rgb(1, 1, 254);
+ border-radius: 20px;
+ max-width: 600px;
+ background-color: rgb(168, 252, 252);
+ margin: 5px auto;
+}
+
+.heading h1 {
+ text-align: center;
+ color: rgb(1, 1, 254);
+}
+
+.container {
+ background-color: rgb(168, 252, 252);
+ margin: 2px auto;
+ max-width: 800px;
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ border: 3px solid rgb(1, 1, 254);
+ border-radius: 120px;
+}
+
+.btns {
+ font-size: large;
+ color: rgb(1, 1, 254);
+ margin: 1.5px;
+ padding: 5px;
+ background-color: rgb(253, 241, 226);
+ border: 3px solid rgb(1, 1, 254);
+ border-radius: 20px;
+ width: 85px;
+ height: 60px;
+}
+
+.btns:hover {
+ background-color: rgb(143, 249, 143);
+}
